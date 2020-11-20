@@ -96,3 +96,6 @@ Press **F10** to save changes.
 - Front Headphone/Mic combo jack is not working
 - Sleep is not working (Reboot or blackscreen when trying to wake it)
 - Upgrade to macOS Big Sur 11.0.x from Catalina faces one time **Real-Time Clock (RTC) Power loss (005)** error, safely ignore it. When upgrade is finished, no RTC erros on normal reboot
+
+## Credits:
+Thanks to ![sakoula](https://github.com/sakoula) and ![HP EliteDesk 800 G2 Tower PC (Skylake) for macOS Big Sur & Catalina](https://github.com/sakoula/HP-EliteDesk-800-G2-6700)
