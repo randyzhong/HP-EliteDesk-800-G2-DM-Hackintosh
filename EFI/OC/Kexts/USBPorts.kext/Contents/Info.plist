@@ -195,12 +195,12 @@
 						GAAAAA==
 						</data>
 					</dict>
-					<key>USR1</key>
+					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
-						<string>USR1</string>
+						<string>HS07</string>
 						<key>port</key>
 						<data>
 						DwAAAA==
