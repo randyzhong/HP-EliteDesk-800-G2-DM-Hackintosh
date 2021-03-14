@@ -54,21 +54,21 @@ Press **F10** to save changes.
 
 ### Tested OS
 - macOS Catalina 10.15.7
-- macOS Big Sur 11.0.1
+- macOS Big Sur 11.2.3
 
 ### Bootloader
-- OpenCore 0.6.3
+- OpenCore 0.6.7
 
 ### Kexts
-- VirtualSMC.kext (1.1.8)
-- SMCProcessor.kext (1.1.8)
-- SMCSuperIO.kext (1.1.8)
+- VirtualSMC.kext (1.2.1)
+- SMCProcessor.kext (1.2.1)
+- SMCSuperIO.kext (1.2.1)
 - CPUFriend.kext (1.2.2)
-- IntelMausi.kext (1.0.4)
+- IntelMausi.kext (1.0.5)
 - USBPorts.kext (1.0)
-- Lilu.kext (1.4.9)
-- AppleALC (1.5.4)
-- WhateverGreen.kext (1.4.4)
+- Lilu.kext (1.5.1)
+- AppleALC (1.5.8)
+- WhateverGreen.kext (1.4.8)
 - RTCMemoryFixup.kext (1.0.7)
 
 ### USB 3.0 Ports
@@ -91,8 +91,11 @@ Press **F10** to save changes.
 **Type-C**
 - HS09
 
+**WLAN/BT**
+- HS07
+
 ## Known Issues:
-- VGA port is not tested
+- VGA port is supported
 - Front Headphone/Mic combo jack is not working
 - Sleep is not working (Reboot or blackscreen when trying to wake it)
 - Upgrade to macOS Big Sur 11.0.x from Catalina faces one time **Real-Time Clock (RTC) Power loss (005)** error, safely ignore it. When upgrade is finished, no RTC erros on normal reboot
