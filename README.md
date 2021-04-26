@@ -57,42 +57,42 @@ Press **F10** to save changes.
 - macOS Big Sur 11.2.3
 
 ### Bootloader
-- OpenCore 0.6.7
+- OpenCore 0.6.8
 
 ### Kexts
-- VirtualSMC.kext (1.2.1)
-- SMCProcessor.kext (1.2.1)
-- SMCSuperIO.kext (1.2.1)
+- VirtualSMC.kext (1.2.2)
+- SMCProcessor.kext (1.2.2)
+- SMCSuperIO.kext (1.2.2)
 - CPUFriend.kext (1.2.2)
 - IntelMausi.kext (1.0.5)
 - USBPorts.kext (1.0)
-- Lilu.kext (1.5.1)
+- Lilu.kext (1.5.2)
 - AppleALC (1.5.8)
-- WhateverGreen.kext (1.4.8)
+- WhateverGreen.kext (1.4.9)
 - RTCMemoryFixup.kext (1.0.7)
 
 ### USB 3.0 Ports
 **USB 2.0 Device**
-- HS01
-- HS02
-- HS03
-- HS04
-- HS05
-- HS13
+- HS01: Back left up USB2
+- HS02: Back left down USB2
+- HS03: Front Left USB2
+- HS04: Back right down USB2
+- HS05: Back right up USB2
+- HS13: Front right USB2
 
 **USB 3.0 Device**
-- SS01
-- SS02
-- SS03
-- SS04
-- SS05
-- SS08
+- SS01: Back left up USB3
+- SS02: Back left down USB3
+- SS03: Front left USB3
+- SS04: Back right down USB3
+- SS05: Back right up USB3
+- SS08: Front right USB3
 
 **Type-C**
-- HS09
+- HS09: Front Type-C
 
 **WLAN/BT**
-- HS07
+- HS07: Internal Bluetooth (Thanks to [git-ken-hub](https://github.com/git-ken-hub) and [anthonyuk](https://github.com/anthonyuk))
 
 ## Known Issues:
 - VGA port is supported
