@@ -16,7 +16,7 @@ Here is my EliteDesk 800 G2 DM specs:
 - Memory: 1 x 8GB Micron DDR4-2400
 - Storage: SAMSUNG MZ7LN256HMJP-000H1 
 - LAN: Intel® I219M Gigabit Network Connection LOM
-- WLAN: Intel® 8260 802.11ac 2x2 Wi-Fi with Bluetooth M.2 Combo Card Vpro (802.11ac Wave 2 supported)
+- WLAN: BCM943224PCIEBT2 300Mbps 2.4&5G WiFi bluetooth 4.0 Mini PCIe
 - Audio: Realtec ALC221 Audio Codec (all ports are stereo, 1 internal speaker, 1 front headphone, 1 front CITA port)
 
 ## Configure BIOS Settings
@@ -35,7 +35,7 @@ Then insure:
   - Disable **Virtualization Technology (VTx)**
   - Disable **Virtualization Technology for Directed I/O (VTd)**
   - Enable **M.2 SSD** if you're using a NVME SSD
-  - Uncheck **M.2 WLAN/BT** if you're using a Intel 8265NGW or other unsupported card
+  - Check **M.2 WLAN/BT** as I am using BCM943224PCIEBT2 - May 11, 2021
   - Check **Allow PCIe/PCI SERR# Interrupt** (Uncheck it if have interruption issues)
 
 #### Advanced -> Built-in Device Options
@@ -50,26 +50,32 @@ Then insure:
 #### Advanced -> Power Management Options
 - Disable **Extended Idle Power States**
 
+#### Advanced > Option ROM Launch Policy (Dual displays support)
+- Configure Option ROM Launch Policy to **All UEI**
+
+
 Press **F10** to save changes.
 
 ### Tested OS
 - macOS Catalina 10.15.7
-- macOS Big Sur 11.2.3
+- macOS Big Sur 11.3.1
 
 ### Bootloader
-- OpenCore 0.6.8
+- OpenCore 0.6.9
 
 ### Kexts
-- VirtualSMC.kext (1.2.2)
-- SMCProcessor.kext (1.2.2)
-- SMCSuperIO.kext (1.2.2)
-- CPUFriend.kext (1.2.2)
-- IntelMausi.kext (1.0.5)
+- VirtualSMC.kext (1.2.3)
+- SMCProcessor.kext (1.2.3)
+- SMCSuperIO.kext (1.2.3)
+- CPUFriend.kext (1.2.3)
+- IntelMausi.kext (1.0.6)
 - USBPorts.kext (1.0)
-- Lilu.kext (1.5.2)
+- Lilu.kext (1.5.3)
 - AppleALC (1.5.8)
 - WhateverGreen.kext (1.4.9)
 - RTCMemoryFixup.kext (1.0.7)
+- AirportBrcmFixup.kext (2.1.2)
+- BrcmBluetoothInjector.kext (2.5.8)
 
 ### USB 3.0 Ports
 **USB 2.0 Device**
@@ -91,11 +97,11 @@ Press **F10** to save changes.
 **Type-C**
 - HS09: Front Type-C
 
-**WLAN/BT**
+**Bluetooth**
 - HS07: Internal Bluetooth (Thanks to [git-ken-hub](https://github.com/git-ken-hub) and [anthonyuk](https://github.com/anthonyuk))
 
 ## Known Issues:
-- VGA port is supported
+- VGA port is not supported
 - Front Headphone/Mic combo jack is not working
 - Sleep is not working (Reboot or blackscreen when trying to wake it)
 - Upgrade to macOS Big Sur 11.0.x from Catalina faces one time **Real-Time Clock (RTC) Power loss (005)** error, safely ignore it. When upgrade is finished, no RTC erros on normal reboot
