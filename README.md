@@ -58,24 +58,24 @@ Press **F10** to save changes.
 
 ### Tested OS
 - macOS Catalina 10.15.7
-- macOS Big Sur 11.3.1
+- macOS Big Sur 11.6
 
 ### Bootloader
-- OpenCore 0.6.9
+- OpenCore 0.7.3
 
 ### Kexts
-- VirtualSMC.kext (1.2.3)
-- SMCProcessor.kext (1.2.3)
-- SMCSuperIO.kext (1.2.3)
-- CPUFriend.kext (1.2.3)
-- IntelMausi.kext (1.0.6)
+- VirtualSMC.kext (1.2.7)
+- SMCProcessor.kext (1.2.7)
+- SMCSuperIO.kext (1.2.7)
+- CPUFriend.kext (1.2.4)
+- IntelMausi.kext (1.0.7)
 - USBPorts.kext (1.0)
-- Lilu.kext (1.5.3)
-- AppleALC (1.5.8)
-- WhateverGreen.kext (1.4.9)
+- Lilu.kext (1.5.6)
+- AppleALC (1.6.4)
+- WhateverGreen.kext (1.5.3)
 - RTCMemoryFixup.kext (1.0.7)
-- AirportBrcmFixup.kext (2.1.2)
-- BrcmBluetoothInjector.kext (2.5.8)
+- AirportBrcmFixup.kext (2.1.3)
+- BrcmBluetoothInjector.kext (2.6.0)
 
 ### USB 3.0 Ports
 **USB 2.0 Device**
